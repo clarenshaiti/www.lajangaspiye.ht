@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Un guide clair du rapport d’audit PetroCaribe publié en janvier 2019 par la CSCCA, avec ses principaux constats et un document consultable.">
+    <meta name="theme-color" content="#123b79">
+    <title>Lajan Gaspiye | PetroCaribe Audit Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="report-text.js"></script>
+    <script defer src="translations.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Lajan Gaspiye home">
+        <span class="wordmark-mark" aria-hidden="true">L</span>
+        <span>LAJAN GASPIYE</span>
+      </a>
+      <nav aria-label="Navigation principale" data-i18n-attr="aria-label:navLabel">
+        <a href="#overview" data-i18n="navOverview">À propos</a>
+        <a href="#findings" data-i18n="navFindings">Constats clés</a>
+        <a href="#reader" data-i18n="navReader">Rechercher</a>
+        <label class="language-picker">
+          <span class="visually-hidden" data-i18n="languageLabel">Langue du site</span>
+          <select id="language-select" aria-label="Langue du site" data-i18n-attr="aria-label:languageLabel">
+            <option value="fr">Français</option>
+            <option value="ht">Kreyòl</option>
+            <option value="es">Español</option>
+          </select>
+        </label>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="heroEyebrow">AYITI · ODIT OFISYÈL · JANVYE 2019</span></p>
+          <h1><span data-i18n="heroTitle">Suivre la trace de l’argent.</span><br><em data-i18n="heroSubtitle">Comprendre l’audit.</em></h1>
+          <p class="hero-intro" data-i18n="heroIntro">Un guide clair du premier rapport de la Cour supérieure des comptes et du contentieux administratif d’Haïti sur les projets financés par le fonds PetroCaribe. Consultez le rapport original page par page.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#overview"><span data-i18n="exploreReport">Explorer le rapport</span> <span aria-hidden="true">↓</span></a>
+            <a class="text-link hero-link" href="PETROCARIBE-Audit-January-2019.pdf" target="_blank" rel="noopener"><span data-i18n="openPdf">Ouvrir le PDF original</span> <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note" data-i18n="heroNote">Ce guide résume le rapport. La transcription consultable ci-dessous est en français, comme le document original.</p>
+        </div>
+        <div class="hero-art" aria-label="Photographie du monument Nèg Mawon à Port-au-Prince" data-i18n-attr="aria-label:heroIllustration">
+          <div class="hero-art-glow" aria-hidden="true"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="poster-stack poster-stack-back" aria-hidden="true"></div>
+          <div class="poster-stack poster-stack-front" aria-hidden="true"></div>
+          <div class="haiti-poster">
+            <img class="dessalines-portrait" src="neg-mawon-port-au-prince.jpg" alt="Photographie du monument Nèg Mawon, aussi appelé Le Marron Inconnu, à Port-au-Prince" data-i18n-attr="alt:dessalinesAlt">
+            <div class="poster-caption">
+              <span class="poster-kicker" data-i18n="posterKicker">SYMBOLE DE LIBERTÉ EN HAÏTI</span>
+              <span class="poster-name" data-i18n="posterName">NÈG MAWON</span>
+              <span class="poster-years" data-i18n="posterLocation">PORT-AU-PRINCE</span>
+            </div>
+            <span class="poster-label" data-i18n="posterLabel">MONUMENT À PORT-AU-PRINCE</span>
+          </div>
+          <div class="photo-credit">
+            <span data-i18n="photoBy">Photo</span>
+            <a href="https://commons.wikimedia.org/wiki/File:Le_Marron_Inconnu,_Haiti_2012.jpg" target="_blank" rel="noopener">Kristina Just · Wikimedia Commons</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="facts-strip" aria-label="Détails du rapport" data-i18n-attr="aria-label:reportDetails">
+        <div class="fact"><span class="fact-label" data-i18n="auditPeriod">PÉRIODE DE L’AUDIT</span><strong>2008 — 2016</strong><span data-i18n="auditDates">Septembre 2008 à septembre 2016</span></div>
+        <div class="fact"><span class="fact-label" data-i18n="published">PUBLICATION</span><strong data-i18n="january2019">Janvier 2019</strong><span data-i18n="reportOne">Rapport 1 de l’audit</span></div>
+        <div class="fact"><span class="fact-label" data-i18n="issuedBy">PUBLIÉ PAR</span><strong>CSCCA</strong><span data-i18n="courtName">Cour supérieure des comptes d’Haïti</span></div>
+        <div class="fact"><span class="fact-label" data-i18n="source">SOURCE</span><strong data-i18n="pages291">291 pages</strong><span data-i18n="originalFrench">Rapport original en français</span></div>
+      </section>
+
+      <section class="section overview-section" id="overview">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-dark" data-i18n="overviewEyebrow">01 / CONTEXTE</p>
+          <h2 data-i18n="overviewTitle">L’objectif de ce rapport</h2>
+        </div>
+        <div class="overview-grid">
+          <div class="overview-lead">
+            <p class="lead-text" data-i18n="overviewLead">À la demande du Sénat haïtien, la Cour des comptes a examiné la gestion par les organismes publics des projets de développement financés par le fonds PetroCaribe.</p>
+            <p data-i18n="overviewBody">L’audit a porté sur la planification des projets, les marchés publics, l’exécution des travaux et la clôture des projets. Il visait à évaluer l’économie et l’efficacité des dépenses, le respect des procédures et la justification ainsi que l’utilisation prévue des décaissements.</p>
+            <a class="inline-link" href="#reader" data-page-link="2"><span data-i18n="auditMandate">Lire le mandat d’audit dans le rapport</span> <span>→</span></a>
+          </div>
+          <aside class="scope-card">
+            <span class="card-kicker" data-i18n="scopeKicker">À NOTER SUR LE PÉRIMÈTRE</span>
+            <h3 data-i18n="scopeTitle">Ce premier rapport ne couvre pas l’ensemble de l’audit.</h3>
+            <p data-i18n="scopeBody">La Cour précise que ce rapport porte sur les projets dont les dossiers complets lui étaient parvenus avant la date limite. Certains documents demandés ont été transmis en retard ou n’étaient pas disponibles, et d’autres étaient encore en cours d’analyse. Le rapport ne constitue donc pas un examen complet de tous les projets financés par PetroCaribe pendant toute la période.</p>
+            <a class="inline-link" href="#reader" data-page-link="3"><span data-i18n="scopeLink">Lire les limites indiquées par la Cour</span> <span>→</span></a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section findings-section" id="findings">
+        <div class="section-heading section-heading-wide">
+          <div>
+            <p class="eyebrow eyebrow-dark" data-i18n="findingsEyebrow">02 / CONSTATS DE LA COUR</p>
+            <h2 data-i18n="findingsTitle">Les principaux constats, en termes clairs</h2>
+          </div>
+          <p class="section-aside" data-i18n="findingsAside">Il s’agit des observations et recommandations rapportées par la Cour, et non de conclusions indépendantes de ce site.</p>
+        </div>
+
+        <div class="finding-grid">
+          <article class="finding-card finding-featured">
+            <span class="finding-number">01</span>
+            <div>
+              <span class="card-kicker" data-i18n="finding1Kicker">SUIVI DES PROJETS</span>
+              <h3 data-i18n="finding1Title">Des lacunes dans la planification et le contrôle des projets</h3>
+              <p data-i18n="finding1Body">Le rapport relève une évaluation insuffisante des besoins et des coûts, une documentation déficiente ainsi que des lacunes dans le suivi des budgets, des échéances, des contrats et de la qualité des ouvrages réceptionnés.</p>
+              <a class="inline-link" href="#reader" data-page-link="4"><span data-i18n="seeExamples">Voir des exemples dans le rapport</span> <span>→</span></a>
+            </div>
+          </article>
+          <article class="finding-card">
+            <span class="finding-number">02</span>
+            <div>
+              <span class="card-kicker" data-i18n="finding2Kicker">PAIEMENTS ET DOCUMENTS</span>
+              <h3 data-i18n="finding2Title">Des paiements insuffisamment justifiés</h3>
+              <p data-i18n="finding2Body">La Cour cite notamment des paiements sans pièces justificatives suffisantes, des travaux interrompus malgré des paiements et l’absence de procès-verbaux de réception provisoire ou définitive.</p>
+              <a class="inline-link" href="#reader" data-page-link="4"><span data-i18n="findExamples">Consulter les exemples de l’audit</span> <span>→</span></a>
+            </div>
+          </article>
+          <article class="finding-card">
+            <span class="finding-number">03</span>
+            <div>
+              <span class="card-kicker" data-i18n="finding3Kicker">LAMPADAIRES SOLAIRES</span>
+              <h3 data-i18n="finding3Title">Un préjudice estimé à 22,4 millions de gourdes</h3>
+              <p data-i18n="finding3Body">Pour un projet d’éclairage par lampadaires solaires, la Cour estime le préjudice à 22 429 577,61 gourdes : un paiement contractuel dépassait la valeur des prestations fournies.</p>
+              <a class="inline-link" href="#reader" data-page-link="4"><span data-i18n="sourcePassage">Lire le passage source</span> <span>→</span></a>
+            </div>
+          </article>
+          <article class="finding-card">
+            <span class="finding-number">04</span>
+            <div>
+              <span class="card-kicker" data-i18n="finding4Kicker">MARCHÉS PUBLICS</span>
+              <h3 data-i18n="finding4Title">Les règles des contrats et les délais comptent</h3>
+              <p data-i18n="finding4Body">Le rapport signale notamment des problèmes de conformité aux règles des marchés publics, des retards et, dans certains cas, l’absence d’application des pénalités ou du remboursement des avances prévus aux contrats.</p>
+              <a class="inline-link" href="#reader" data-page-link="5"><span data-i18n="exploreFindings">Explorer les constats</span> <span>→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="institution-band">
+          <div>
+            <span class="card-kicker" data-i18n="agenciesKicker">ORGANISMES CITÉS DANS LE RÉSUMÉ EXÉCUTIF</span>
+            <h3 data-i18n="agenciesTitle">Les constats concernent plusieurs institutions publiques.</h3>
+          </div>
+          <div class="institution-list">
+            <span>BMPAD <b data-i18n="projects2">2 projets</b></span>
+            <span>MTPTC <b data-i18n="projects20of142">20 sur 142</b></span>
+            <span>MPCE <b data-i18n="projects17">17 projets</b></span>
+            <span>MARNDR <b data-i18n="projects9">9 projets</b></span>
+            <span><span data-i18n="tourismMinistry">Ministère du Tourisme</span> <b data-i18n="projects9">9 projets</b></span>
+          </div>
+          <p class="institution-footnote" data-i18n="institutionsFootnote">Pour le MTPTC, la Cour indique avoir examiné 20 projets sur 142, d’une valeur de 218 129 224,98 USD, soit plus de 31 % des budgets révisés des 14 résolutions. Ces chiffres proviennent du résumé exécutif et ne représentent pas nécessairement le bilan complet de tous les travaux d’audit.</p>
+        </div>
+      </section>
+
+      <section class="recommendation-section">
+        <div class="recommendation-mark" aria-hidden="true">“</div>
+        <div class="recommendation-copy">
+          <p class="eyebrow" data-i18n="recommendationsEyebrow">03 / RECOMMANDATIONS DE LA COUR</p>
+          <h2 data-i18n="recommendationsTitle">Mieux planifier. Renforcer les contrôles. Établir les responsabilités.</h2>
+          <p data-i18n="recommendationsBody">La Cour recommande d’enquêter sur les préjudices possibles, d’améliorer la planification et l’estimation des coûts, de privilégier les appels d’offres ouverts hors urgence, de renforcer le contrôle des contrats et de la qualité, et d’obtenir les autorisations requises avant toute dépense.</p>
+          <a class="text-link" href="#reader" data-page-link="9"><span data-i18n="readRecommendations">Lire les recommandations dans le document</span> <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="recommendation-stamp" data-i18n="executiveSummary">TIRÉ DU<br>RÉSUMÉ<br>EXÉCUTIF</div>
+      </section>
+
+      <section class="section reader-section" id="reader">
+        <div class="section-heading section-heading-wide">
+          <div>
+            <p class="eyebrow eyebrow-dark" data-i18n="readerEyebrow">04 / CONSULTER LA SOURCE</p>
+            <h2 data-i18n="readerTitle">Rechercher dans les 291 pages</h2>
+          </div>
+          <p class="section-aside" data-i18n="readerAside">Le texte consultable est extrait du PDF original en français. Vérifiez le contexte, les tableaux, la mise en page et les chiffres dans le document original.</p>
+        </div>
+
+        <div class="reader-shell">
+          <div class="reader-toolbar">
+            <label class="search-field">
+              <span class="visually-hidden" data-i18n="searchLabel">Rechercher dans le texte du rapport</span>
+              <span class="search-icon" aria-hidden="true"></span>
+              <input id="search-input" type="search" placeholder="Rechercher un mot ou une expression en français…" autocomplete="off" data-i18n-attr="placeholder:searchPlaceholder">
+              <kbd data-i18n="liveSearch">EN DIRECT</kbd>
+            </label>
+            <label class="page-jump">
+              <span data-i18n="pageLabel">PAGE</span>
+              <input id="page-input" type="number" min="1" max="291" value="1" aria-label="Aller à la page" data-i18n-attr="aria-label:goToPage">
+              <span><span data-i18n="ofPages">SUR</span> <b id="page-total">291</b></span>
+            </label>
+          </div>
+          <div class="reader-body">
+            <aside class="search-results" aria-label="Résultats de recherche" data-i18n-attr="aria-label:searchResults">
+              <div class="results-header">
+                <span data-i18n="reportPages">PAGES DU RAPPORT</span>
+                <span id="results-count" aria-live="polite">291 pages</span>
+              </div>
+              <div id="results-list" class="results-list">
+                <p class="results-empty" data-i18n="searchPrompt">Saisissez un mot ou une expression pour le trouver dans le rapport.</p>
+              </div>
+            </aside>
+            <article class="page-panel" aria-label="Page du rapport original" data-i18n-attr="aria-label:sourcePage">
+              <div class="page-panel-head">
+                <button class="page-arrow" id="previous-page" type="button" aria-label="Page précédente" data-i18n-attr="aria-label:previousPage">←</button>
+                <span id="current-page-label">PAGE 1</span>
+                <button class="page-arrow" id="next-page" type="button" aria-label="Page suivante" data-i18n-attr="aria-label:nextPage">→</button>
+              </div>
+              <embed
+                id="pdf-viewer"
+                class="pdf-viewer"
+                type="application/pdf"
+                title="Page du PDF original PetroCaribe"
+                aria-label="Page du PDF original PetroCaribe"
+                src="PETROCARIBE-Audit-January-2019.pdf#page=1&amp;zoom=page-width&amp;toolbar=0&amp;navpanes=0"
+                data-i18n-attr="title:pdfViewerTitle,aria-label:pdfViewerTitle"
+              >
+              <details class="transcript-disclosure">
+                <summary>
+                  <span data-i18n="transcriptToggle">Consulter le texte extrait de cette page</span>
+                  <span id="transcript-page-label">PAGE 1</span>
+                </summary>
+                <div id="page-text" class="page-text" tabindex="0">
+                  <p class="loading-message" data-i18n="loadingText">Chargement du texte du rapport…</p>
+                </div>
+              </details>
+            </article>
+          </div>
+          <div class="reader-footer">
+            <span data-i18n="transcriptNote">Transcription en français · extraite page par page du PDF original</span>
+            <a href="Lajan-Gaspiye-edition-de-lecture.pdf" download><span data-i18n="downloadReadingEdition">Télécharger l’édition de lecture</span> <span aria-hidden="true">↓</span></a>
+            <a id="original-pdf-link" href="PETROCARIBE-Audit-January-2019.pdf#page=1" target="_blank" rel="noopener"><span data-i18n="openOriginal">Ouvrir le PDF original</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p id="reader-error" class="reader-error" role="alert" hidden data-i18n="readerError">Impossible de charger la transcription du rapport. Veuillez ouvrir le PDF original.</p>
+      </section>
+
+      <section class="source-note">
+        <div class="source-note-inner">
+          <span class="source-icon" aria-hidden="true">i</span>
+          <p><strong data-i18n="sourceNoteTitle">À propos de ce guide.</strong> <span data-i18n="sourceNoteBody">Ce résumé en langage clair synthétise le résumé exécutif du rapport et ne remplace pas l’audit complet. Les explications sont traduites pour faciliter la lecture; la transcription consultable et le PDF original sont en français. Les chiffres et constats sont attribués au rapport de la CSCCA et n’ont pas fait l’objet d’un nouvel audit indépendant sur ce site.</span></p>
+          <a href="PETROCARIBE-Audit-January-2019.pdf" download><span data-i18n="downloadPdf">Télécharger le PDF original</span> <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#top" aria-label="Lajan Gaspiye home"><span class="wordmark-mark" aria-hidden="true">L</span><span>LAJAN GASPIYE</span></a>
+      <span data-i18n="footerNote">Guide de lecture du rapport de la CSCCA de janvier 2019</span>
+      <a href="#top" data-i18n="backToTop">Retour en haut ↑</a>
+    </footer>
+  </body>
+</html>
